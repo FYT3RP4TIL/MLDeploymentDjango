@@ -54,7 +54,7 @@ ROOT_URLCONF = 'MLDep.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'], # giving templates path to Django added BASE_DIR/'templates'.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
